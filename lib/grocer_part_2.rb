@@ -11,7 +11,8 @@ coupons.each do |key|
     price: coupon[:cost]/coupon[:num],
     clearance: discount_item[:clearance],
     count: coupon[:num]
-  }# REMEMBER: This method **should** update cart
+  }
+  discount_item[:count] -= coupon[:num}]# REMEMBER: This method **should** update cart
   end
 end
 cart
