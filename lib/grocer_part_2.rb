@@ -2,7 +2,7 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
   i = 0 # Consult README for inputs and outputs
 coupons.each do |key|
-  discount_item = find_item_by_name_in_collection([:item], cart)
+  discount_item = find_item_by_name_in_collection(coupon[:item], cart)
   in_cart = !!discount_item
   valid_coupon = in_cart && discount_item[:count] >= coupon[:num]
   if discount_item && valid_coupon
