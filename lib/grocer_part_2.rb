@@ -23,7 +23,7 @@ def apply_clearance(cart)
     if item[:clearance]
       item[:price] *= 0.8# Consult README for inputs and outputs
     end
-    key
+    item
   end## REMEMBER: This method **should** update cart
 end
 
