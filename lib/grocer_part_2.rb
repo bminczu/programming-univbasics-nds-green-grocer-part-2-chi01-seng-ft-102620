@@ -14,6 +14,7 @@ coupons.each do |key|
   }
   discount_item[:count] -= coupon[:num}]# REMEMBER: This method **should** update cart
   end
+  i += 1
 end
 cart
 end
